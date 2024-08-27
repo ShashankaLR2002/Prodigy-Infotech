@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ff0;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 60px; /* Space for fixed navbar */
+    min-height: 100vh;
+}
+
+section:nth-of-type(odd) {
+    background: #f4f4f4;
+}
+
+section:nth-of-type(even) {
+    background: #fff;
+}
